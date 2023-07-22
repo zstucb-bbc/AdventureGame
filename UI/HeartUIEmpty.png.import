@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpfjpagm3bqe"
+uid="uid://bq0uwlrab34ol"
 path="res://.godot/imported/HeartUIEmpty.png-417b0a6fe975644d9dba3671413f10e5.ctex"
 metadata={
 "vram_texture": false
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
