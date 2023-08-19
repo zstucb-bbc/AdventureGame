@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://daqiv3bjg814e"]
+[gd_scene load_steps=39 format=3 uid="uid://daqiv3bjg814e"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_riny8"]
 [ext_resource type="Texture2D" uid="uid://btx306haauim6" path="res://Player/Player.png" id="2_n53ff"]
@@ -391,8 +391,6 @@ states/Run/position = Vector2(552, 100)
 transitions = ["Idle", "Run", SubResource("AnimationNodeStateMachineTransition_3iap2"), "Run", "Idle", SubResource("AnimationNodeStateMachineTransition_qcegt"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_2ylnu"), "Idle", "Attacking", SubResource("AnimationNodeStateMachineTransition_3cvse"), "Attacking", "Idle", SubResource("AnimationNodeStateMachineTransition_istne")]
 graph_offset = Vector2(-437.547, -81.4506)
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_4rrdb"]
-
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_riny8")
 
@@ -414,7 +412,6 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_iqdwd")
 anim_player = NodePath("../AnimationPlayer")
-parameters/playback = SubResource("AnimationNodeStateMachinePlayback_4rrdb")
 parameters/Attacking/blend_position = Vector2(-0.177281, -0.224221)
 parameters/Idle/blend_position = Vector2(0, 0)
 parameters/Run/blend_position = Vector2(0, 0)
